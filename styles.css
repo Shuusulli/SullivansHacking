@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  color: black;
+  font-family: monospace;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin: 1rem 1rem;
+}
+
+.code p {
+  margin: 1rem auto;
+  background: #263238;
+  color: #eff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.8;
+  border-radius: 0.2rem;
+  width: 50%;
+}
+
+.title {
+  height: 4rem;
+  font-size: large;
+  margin: 3rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.navbar {
+  grid-area: 1 / 1 / 6 / 2;
+  padding-left: 2.5rem;
+  font-size: 1.2rem;
+}
+
+.navbar li {
+  margin-top: 0.5rem;
+}
+
+.main {
+  grid-area: 1 / 2 / 6 / 5;
+  text-align: center;
+}
+
+.main img {
+  max-width: 55vh;
+}
+
+.div4 {
+  grid-area: 1 / 5 / 6 / 6;
+}
+
+.droptoggle:hover {
+  background-color: rgba(0, 0, 0, 0.137);
+  border-radius: 0.2rem;
+}
+
+.dropshow {
+  display: none;
+}
+
+.dropshow.active {
+  display: block;
+  padding-left: 1.5rem;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+/*animatino typing*/
+
+#typing-title {
+  display: inline-block;
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide overflowing text */
+  animation: typing 2s steps(40, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

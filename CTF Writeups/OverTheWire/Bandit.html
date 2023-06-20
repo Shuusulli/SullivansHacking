@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/407ceaf4ef.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="title">
+      <a href="./index.html"><h1 id="typing-title"></h1></a>
+    </header>
+    <div class="container">
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a class="droptoggle" href="#">
+              <i class="fa-solid fa-folder icon"></i>
+              root@sulli
+            </a>
+            <ul class="dropshow">
+              <li><a href="#">Biografia</a></li>
+              <li><a href="#">Diplomas</a></li>
+              <li><a href="#">Certificados</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="droptoggle" href="#">
+              <i class="fa-solid fa-folder icon"></i>
+              CTF Writeups
+            </a>
+            <ul class="dropshow">
+              <li>
+                <a class="droptoggle hijo" href="#"
+                  ><i class="fa-solid fa-folder icon"></i>
+                  Over The Wire
+                </a>
+                <ul class="dropshow">
+                  <li>
+                    <a
+                      class="droptoggle hijo"
+                      href="/CTF Writeups/OverTheWire/Bandit.html"
+                    >
+                      Bandit
+                    </a>
+                  </li>
+                  <li>
+                    <a class="droptoggle hijo" href="#"> Natas </a>
+                  </li>
+                  <li>
+                    <a class="droptoggle hijo" href="#"> Leviathan </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="droptoggle hijo" href="#"
+                  ><i class="fa-solid fa-folder icon"></i>
+                  Vulnhub
+                </a>
+                <ul class="dropshow">
+                  <li>
+                    <a class="droptoggle hijo" href="#"> Easy </a>
+                  </li>
+                  <li>
+                    <a class="droptoggle hijo" href="#"> Medium </a>
+                  </li>
+                  <li>
+                    <a class="droptoggle hijo" href="#"> Hard </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="droptoggle hijo" href="#"
+                  ><i class="fa-solid fa-folder icon"></i>
+                  Hack the Box
+                </a>
+                <ul class="dropshow">
+                  <li>
+                    <a class="droptoggle hijo" href="#"> Easy </a>
+                  </li>
+                  <li>
+                    <a class="droptoggle hijo" href="#"> Medium </a>
+                  </li>
+                  <li>
+                    <a class="droptoggle hijo" href="#"> Hard </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="droptoggle hijo" href="#"
+                  ><i class="fa-solid fa-folder icon"></i>
+                  Try Hack Me
+                </a>
+                <ul class="dropshow">
+                  <li>
+                    <a class="droptoggle hijo" href="#"> Easy </a>
+                  </li>
+                  <li>
+                    <a class="droptoggle hijo" href="#"> Medium </a>
+                  </li>
+                  <li>
+                    <a class="droptoggle hijo" href="#"> Hard </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="droptoggle" href="#">
+              <i class="fa-solid fa-file"></i>
+              Projects
+            </a>
+          </li>
+          <li>
+            <a class="droptoggle" href="#">
+              <i class="fa-solid fa-folder icon"></i>
+              Socials
+            </a>
+            <ul class="dropshow">
+              <li>
+                <a
+                  class="droptoggle"
+                  href="https://github.com/Shuusulli"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i> Github</a
+                >
+              </li>
+              <li>
+                <a
+                  class="droptoggle"
+                  href="https://twitter.com/shuusulli"
+                  target="_blank"
+                  ><i class="fa-brands fa-twitter"></i> Twitter</a
+                >
+              </li>
+              <li>
+                <a class="droptoggle" href="#"
+                  ><i class="fa-brands fa-linkedin"></i> Linkdin</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <main class="main">
+        <h2>Over The Wire : #Bandit</h2>
+        <img src="./Assets/OverTheWire/logo.jpg" alt="OverTheWire Logo" />
+        <p>
+          Over the wire is the perfect environment to start working with Linux
+          and get to know its structure. It also shows us a brushstroke of what
+          is the pentesting section in cybersecurity. It is a page that provides
+          us with a server full of CTFs (Capture The Flag), the first challenge
+          being this Bandit, which currently consists of 34 levels.
+        </p>
+        <h3>#Level 00</h3>
+        <h4>
+          User : bandit0<br />
+          Password : bandit0<br />
+          Host : bandit.labs.overthewire.org<br />
+        </h4>
+        <p>
+          The goal of this level is for you to log into the game using SSH. The
+          host to which you need to connect is bandit.labs.overthewire.org, on
+          port 2220. The username is bandit0 and the password is bandit0. Once
+          logged in, go to the Level 1 page to find out how to beat Level 1.
+          <br />
+        </p>
+        <p>
+          <b>Solution :</b> Log in with the user and password using the ssh
+          command in your terminal, for bandit exercises you can use the windows
+          CMD. No need to use a linux shell
+        </p>
+        <span class="code">
+          <p>
+            ssh bandit0@bandit.labs.overthewire.org -p 2220 <br />
+            Password : bandit0
+          </p>
+        </span>
+        <img src="/Assets/OverTheWire/Bandit/bandit0_1.png" alt="bandit" />
+        <p>
+          If this command is successful, you will see that we are logged in with
+          the user bandit0.
+        </p>
+        <img
+          src="/Assets/OverTheWire/Bandit/Screenshot 2023-06-19 200537.png"
+          alt="bandit"
+        />
+      </main>
+
+      <div class="div4"></div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
