@@ -62,9 +62,3 @@ function typeTitle() {
 }
 
 typeTitle();
-
-/* Add a click event listener to the document
-document.addEventListener("click", function (element) {
-  removeActiveClass(element);
-});
-*/
